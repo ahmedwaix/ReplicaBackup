@@ -9,7 +9,7 @@
 ***
 
 
-**Activitat 3: Replica Backup**
+**Activitat 4 - Rèplica i Backup**
 
 
 ***
