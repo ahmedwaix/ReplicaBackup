@@ -32,14 +32,17 @@ Primer el que farem es descargar el paquet de xtrabackup
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image45.png)
 
-Ara extraiem el tar i hauran 4 rpm
+Ara extraiem el tar 
 
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image46.png)
+
+
+Com es veu en la captura hi ha 4 rpms
 
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image47.png)
 
-i instal·lem el paquet marcat en la captura anterior
+Instal·lem el paquet marcat en la captura anterior
 
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image48.png)
@@ -53,7 +56,7 @@ Li donarem permissos al usuari backup
 
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image50.png)
 
-Una vegada fet aixo surtim de l mysql i creem la carpeta per guardar el
+Una vegada fet aixo surtim del mysql i creem la carpeta per guardar el
 backup
 
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image51.png)
@@ -68,7 +71,7 @@ Una vegada ja creada anem a la carpeta tmp
 
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image53.png)
 
-Ara a la carpeta on esta el backup creat amb tota la informacio de la
+Com es veu el backup esta creat amb tota la informacio de la
 maquina
 
 ![Interfaz de usuario gráfica Descripción generada automáticamente con
@@ -84,13 +87,13 @@ Anirem al directori de dades de mysql
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image56.png)
 
-Ara eliminarem el contingut, i com es veu esta buit
+Eliminarem el contingut, i com es veu esta buit
 
 ![Imagen de la pantalla de un video juego Descripción generada
 automáticamente con confianza
 baja](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image57.png)
 
-Ara per fer una bona restauracio primer fem el prepare per veure quins
+Per fer una bona restauracio primer fem el prepare per veure quins
 canvis fara a la maquina
 
 ![Texto Descripción generada automáticamente con confianza
