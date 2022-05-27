@@ -24,6 +24,8 @@
 ***
 
 # **ACTIVITAT 1 -- CONFIGURACIÓ D’UN SISTEMA DE RÈPLICA**
+![Texto Descripción generada
+automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/configuracio.png)
 ### **CONFIGURACIO MÁSTER**
 
 Verifica que el paràmetre server-id té un valor numèric (per defecte és
