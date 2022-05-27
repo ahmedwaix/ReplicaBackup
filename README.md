@@ -24,7 +24,7 @@
 ***
 
 
-#**CONFIGURACIO MÁSTER**
+# **CONFIGURACIO MÁSTER**
 
 Verifica que el paràmetre server-id té un valor numèric (per defecte és
 1). ![Texto Descripción generada
