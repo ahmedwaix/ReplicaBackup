@@ -22,7 +22,7 @@
 
 **27/05/2022**
 ***
-# **[ÍNDEX]** 
+# **ÍNDEX** 
 
 - CONFIGURACIÓ D’UN SISTEMA DE RÈPLICA: *https://github.com/ahmedwaix/ReplicaBackup/blob/main/CONFIGURACI%C3%93%20D%E2%80%99UN%20SISTEMA%20DE%20R%C3%88PLICA.md*
 - EINES PERCONA TOOLKIT: *https://github.com/ahmedwaix/ReplicaBackup/blob/main/EINES%20PERCONA%20TOOLKIT.md*
