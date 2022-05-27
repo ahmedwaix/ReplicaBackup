@@ -24,6 +24,8 @@
 ***
 
 # **ACTIVITAT 5 -- EINES PERCONA TOOLKIT**
+![Texto Descripción generada
+automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/toolkit.png)
 
 Primer instalem el toolkit amb aquesta comanda al Master
 
