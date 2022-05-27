@@ -140,7 +140,7 @@ automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/
 
 Ara anem al slave a veure si la taula sri s'ha modificat i així elimina
 la inconsisència. Tal o com es veu en la captura en el slave s' ha
-syncronitzat les dades que tenia el master.
+sincronitzat les dades que tenia el master.
 
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image44.png)
