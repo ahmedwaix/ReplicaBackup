@@ -24,6 +24,8 @@
 ***
 
 # **ACTIVITAT 6 -- BACKUP**
+![Texto Descripción generada
+automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/backup.png)
 
 Primer el que farem es descargar el paquet de xtrabackup
 
