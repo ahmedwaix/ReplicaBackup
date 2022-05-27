@@ -58,15 +58,19 @@ Aquesta nova màquina serà que farà d'eslau
 ![Interfaz de usuario gráfica, Texto, Aplicación Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image4.png)
 
-Esbrina quina IP tenen cadascuna de les màquines (master, slave).
+Esbrina quina IP tenen cadascuna de les màquines.
 
-![Texto Descripción generada
-automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image5.png)
+Aquest sera la ip del master
 
-![Texto Descripción generada
-automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image6.png)
+![Texto Descripción generada automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image5.png)
 
-Crea un backup de la BD a la màquina master utilitzant:
+Aquest sera la ip del slave
+
+![Texto Descripción generada automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image6.png)
+
+Crea un backup de la BD a la màquina master utilitzant el mysqldump:
+
+Utilitzem la seguent comanda per crear l'archiu .sql  
 
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image7.png)
 
@@ -75,7 +79,11 @@ Transpasem el archiu
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image8.png)
 
+Anem al mysql del slave
+
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image9.png)
+
+ Executem el archiu mysql amb la seguent sentencia mysql
 
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image10.png)
 
