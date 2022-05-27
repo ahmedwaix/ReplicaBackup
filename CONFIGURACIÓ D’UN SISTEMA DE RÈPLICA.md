@@ -28,17 +28,24 @@
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/configuracio.png)
 ### **CONFIGURACIO MÁSTER**
 
-Verifica que el paràmetre server-id té un valor numèric (per defecte és
-1). ![Texto Descripción generada
+**Verifica que el paràmetre server-id té un valor numèric (per defecte és
+1).**
+
+Per tal de verificar el verificar que el paràmetre del server-id tingui un valor númeric 1, ens dirigim a la ruta ***/etc/my.cnf***, i seguidament escribim la següent comanda:
+
+![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image1.png)
 
-Fes un FLUSH DELS LOGS utilitzant la comanda FLUSH LOGS dins del MySQL
+**Fes un FLUSH DELS LOGS utilitzant la comanda FLUSH LOGS dins del MySQL**
+
+Per tal de fer un FLUSH dels LOGS a dintre de Mysql fem el següent:
 
 ![Interfaz de usuario gráfica, Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image2.png)
 
-Realitza una comprovació dels logs com a master mitjançant SHOW MASTER
-LOGS
+**Realitza una comprovació dels logs com a master mitjançant SHOW MASTER LOGS**
+
+Per tal de realitzar una COMPROVACIÓ dels LOGS com a master mitjançant el show master los fem el següent:
 
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image3.png)
