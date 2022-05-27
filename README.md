@@ -269,7 +269,7 @@ Ara extraiem el tar i hauran 4 rpm
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image46.png)
 
 ![Texto Descripción generada
-automáticamente]([./images/media](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes)/image47.png)
+automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image47.png)
 
 i instal·lem el paquet marcat en la captura anterior
 
