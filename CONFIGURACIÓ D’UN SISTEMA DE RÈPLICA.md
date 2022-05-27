@@ -157,7 +157,7 @@ Iniciem el slave
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image21.png)
 
-Ara veurem el status del slave am la seguent sentenci mysql.Com esta operatiu i fuincina correctament
+Ara veurem el status del slave am la seguent sentenci mysql.Com esta operatiu i funciona correctament
 
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image67.png)
