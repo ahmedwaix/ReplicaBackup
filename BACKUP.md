@@ -27,6 +27,8 @@
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/backup.png)
 
+**Mitjançant l’eina XtraBackup de Percona realitza una còpia completa de la BD i una restauració**
+
 Primer el que farem es descargar el paquet de xtrabackup
 
 ![Texto Descripción generada
@@ -62,22 +64,22 @@ backup
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image51.png)
 
 Ara que ja esta creada la carpeta fem la seguent comanda amb els
-parametres seguents per crear un full backup de la maquina.
+paràmetres següents per crear un full backup de la màquina.
 
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image52.png)
 
-Una vegada ja creada anem a la carpeta tmp
+Una vegada ja creada anem a la carpeta ***tmp***.
 
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image53.png)
 
-Com es veu el backup esta creat amb tota la informacio de la
-maquina
+Com es veu el backup esta creat amb tota la informació de la
+màquina
 
 ![Interfaz de usuario gráfica Descripción generada automáticamente con
 confianza media](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image54.png)
 
-Ara farem la restauracio per que es veigi que funciona primer pararem el
+Ara farem la restauració per que es veigi que funciona. Primer pararem el
 mysql
 
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image55.png)
@@ -93,8 +95,8 @@ Eliminarem el contingut, i com es veu esta buit
 automáticamente con confianza
 baja](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image57.png)
 
-Per fer una bona restauracio primer fem el prepare per veure quins
-canvis fara a la maquina
+Per fer una bona restauració primer fem el prepare per veure quins
+canvis fara a la màquina
 
 ![Texto Descripción generada automáticamente con confianza
 baja](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image58.png)
@@ -127,7 +129,7 @@ Iniciem el servei de mysql
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image63.png)
 
 Entrem al mysql fem un show databases per veure si están totes les bases
-i com es veu están totes.
+i tal com es veu están totes.
 
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image64.png)
