@@ -80,7 +80,7 @@ automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image12.png)
 
-[SLAVE]{.underline}
+#### **SLAVE**
 
 Para el servei de MySQL.
 
@@ -95,7 +95,7 @@ Torna engegar el servei MySQL.
 
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image15.png)
 
-[MASTER]{.underline}
+#### **MASTER**
 
 Afegeix l\'usuari slave amb la IP de la màquina slave
 
