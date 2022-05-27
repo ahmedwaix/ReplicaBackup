@@ -38,12 +38,12 @@ iniciarem i despres crearem una taula
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image26.png)
 
-Ara li insertarem valors a dins de la taula
+Li insertarem valors a dins de la taula
 
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image27.png)
 
-Ara com ja tenim creat una estructura anem al slave a veure que esta
+Com ja tenim creat una estructura. Anem al slave a veure que esta
 replicat. I com es veu esta replicat
 
 ![Texto Descripción generada
@@ -59,7 +59,7 @@ I com es veu esta borrat
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image30.png)
 
-Ara farem un update en el id 2 en el master
+Farem un update en el registre on posa id 2 en el master
 
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image31.png)
@@ -127,8 +127,8 @@ utilitzarem el print per veure els canvis que fara
 
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image41.png)
 
-Ara que ja seabe els cambis que fara executem un altre vegada pero en
-lloc de posar print posarem exexute per fer la sycronitsacio. Com es veu
+Ara que ja sabem els cambis que fara executem un altre vegada pero en
+lloc de posar print posarem execute per fer la sincronizació. Com es veu
 fara un replace en la taula del slave
 
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image42.png)
