@@ -27,13 +27,13 @@
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/toolkit.png)
 
-Primer instalem el toolkit amb aquesta comanda al Master
+Primer instalem el toolkit amb aquesta comanda en el Master
 
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image25.png)
 
 Una vegada ja tenim instalat el toolkit creearem una base de dades i la
-iniciarem i despres crearem una taula
+iniciarem i després crearem una taula
 
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image26.png)
@@ -50,7 +50,7 @@ replicat. I com es veu esta replicat
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image28.png)
 
 Ara farem una inconsistencia de dades, En el slave borrem un registre de
-la taula sri
+la taula ***sri***
 
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image29.png)
 
@@ -96,8 +96,7 @@ Creem una taula dsns en el que guardarem la ip del slave
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image37.png)
 
-Introduiim dades amb el insert a la taula dsns i aixi que da al
-visualizar-ho
+Introduiim dades amb el insert a la taula ***dsns*** i següidament el visualizem
 
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image38.png)
@@ -105,15 +104,15 @@ automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/
 Ja que esta tot configurat per utilizar les eines primer utilitzem la
 primera eina que serveix per detectar inconsistencias entre el master i
 el salve per fer-ho hem de utilizar las seguent comanda
-pt-table-checksum amb els seus paramentres corresponents I com veiem hi
+***pt-table-checksum*** amb els seus paramentres corresponents I com veiem hi
 ha inconsistencia en la taula on posa DIFFS ens diu el numero de
 inconsistencias que hi ha
 
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image39.png)
 
-En el paramentre de la replica ens ha creat una taula el checksum i com
-es veu la Esquerra que es el master on pose this cnt hi ha un 3 y en el
+En el paramentre de la replica ens ha creat una taula el **checksum** i com
+es veu la esquerra que es el master on posa ***"this cnt"*** hi ha un 3 y en el
 salave un 2 aixo vol dir que el master conta 3 rows metres que el slave
 conta 2 rows.
 
@@ -123,7 +122,7 @@ automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/
 Ara que ja hem detectat la inconsistencia amb la seguent eina que es el
 pt-table-sync la ultilitzarem per sycronitzar les dades .Per fer-ho hem
 de utiltzar aquesta comanda amb els seus paramentres en aquest cas
-utilitzarem el print per veure els canvis que fara
+utilitzarem el print per veure els canvis que farà.
 
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image41.png)
 
@@ -133,14 +132,14 @@ fara un replace en la taula del slave
 
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image42.png)
 
-Ara veiem en el mysql la taula sri en el master. Com es veu esta com
+Ara veiem en el mysql la taula sri en el master. Tal o com es veu està com
 abans
 
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image43.png)
 
-Ara anem al slave a veure si la taula sri s' ha modificat i aixi elimina
-la inconsistencia. Com es veu en la captura en el slave s' ha
+Ara anem al slave a veure si la taula sri s'ha modificat i així elimina
+la inconsisència. Tal o com es veu en la captura en el slave s' ha
 syncronitzat les dades que tenia el master.
 
 ![Texto Descripción generada
