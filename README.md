@@ -23,8 +23,8 @@
 **27/05/2022**
 ***
 
-
-# **CONFIGURACIO MÁSTER**
+# **ACTIVITAT 1. CONFIGURACIÓ D’UN SISTEMA DE RÈPLICA**
+### **CONFIGURACIO MÁSTER**
 
 Verifica que el paràmetre server-id té un valor numèric (per defecte és
 1). ![Texto Descripción generada
@@ -41,7 +41,7 @@ LOGS
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image3.png)
 
-# **CONFIGURACIÓ SLAVE i MASTER**
+### **CONFIGURACIÓ SLAVE i MASTER**
 
 Realitza una còpia de la màquina virtual a on tinguis SGBD MySQL.
 Aquesta nova màquina serà que farà d'eslau
@@ -136,7 +136,7 @@ replicat
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image24.png)
 
-ACTIVITAT 5 -- EINES PERCONA TOOLKIT
+## **ACTIVITAT 5 -- EINES PERCONA TOOLKIT**
 
 Primer instalem el toolkit amb aquesta comanda al Master
 
@@ -257,7 +257,7 @@ syncronitzat les dades que tenia el master.
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image44.png)
 
-ACTIVITAT 6 -- BACKUP
+# **ACTIVITAT 6 -- BACKUP**
 
 Primer el que farem es descargar el paquet de xtrabackup
 
