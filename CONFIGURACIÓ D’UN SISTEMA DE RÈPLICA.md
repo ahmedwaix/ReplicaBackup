@@ -83,9 +83,17 @@ Anem al mysql del slave
 
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image9.png)
 
- Executem el archiu mysql amb la seguent sentencia mysql
+Creem la base de dades anmomenada sakila
+ 
+![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image65.png)
+
+ Utilitzem la base de sakila i executem el archiu .sql amb la seguent sentencia mysql
 
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image10.png)
+
+Ara fem un SHOW TABLES per veure si ha fet els canvis.Com es veu ho ha fet.
+
+![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image66.png)
 
 Edita el fitxer master_backup.sql i busca la línia que comenci per
 \--CHANGE MASTER TO\.... i busca els valors MASTER_LOG_FILE i
