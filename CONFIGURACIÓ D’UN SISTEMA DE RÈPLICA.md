@@ -160,7 +160,7 @@ Fem un FLUSH PRIVILEGES
 **A la màquina SLAVE executa la següent comanda ajudant-te de les dades
 del pas 3 i 4:**
 
-Fem un change master to, i posem totes les dades de la màquina slave
+Fem un change master to, i posem totes les dades de la màquina master
 
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image20.png)
