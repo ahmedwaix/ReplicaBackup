@@ -52,34 +52,37 @@ automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/
 
 ### **CONFIGURACIÓ SLAVE i MASTER**
 
-Realitza una còpia de la màquina virtual a on tinguis SGBD MySQL.
-Aquesta nova màquina serà que farà d'eslau
+**Realitza una còpia de la màquina virtual a on tinguis SGBD MySQL. Aquesta nova màquina serà que farà d'eslau**
+
+Ens dirigium a les maquines virtuals i clonem la nostra màquina ja que aquesta serà la d'esclau tal com posa l'enunciat que fem (**SLAVE**)
+
+
 
 ![Interfaz de usuario gráfica, Texto, Aplicación Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image4.png)
 
-Esbrina quina IP tenen cadascuna de les màquines.
+**Esbrina quina IP tenen cadascuna de les màquines**
 
-Aquest sera la ip del master
+Escrivim ***ipconfig*** i aquesta es la ip que correspon a la màquina del **Master**
 
 ![Texto Descripción generada automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image5.png)
 
-Aquest sera la ip del slave
+I aquesta a la màquina que correspon a la del **Slave**
 
 ![Texto Descripción generada automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image6.png)
 
-Crea un backup de la BD a la màquina master utilitzant el mysqldump:
+**Crea un backup de la BD a la màquina master utilitzant el mysqldump:**
 
-Utilitzem la seguent comanda per crear l'archiu .sql  
+Utilitzem la seguent comanda per crear l'arxiu .sql  
 
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image7.png)
 
-Transpasem el archiu
+Transpasem l'arxiu amb la següent comanda:
 
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image8.png)
 
-Anem al mysql del slave
+Anem al mysql de la màquina del slave
 
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image9.png)
 
@@ -87,19 +90,19 @@ Creem la base de dades anmomenada sakila
  
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image65.png)
 
- Utilitzem la base de sakila i executem el archiu .sql amb la seguent sentencia mysql
+Utilitzem la base de sakila i executem l'arxiu .sql amb la seguent sentència mysql
 
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image10.png)
 
-Ara fem un SHOW TABLES per veure si ha fet els canvis.Com es veu ho ha fet.
+Ara fem un SHOW TABLES per veure si ha fet els canvis. Tal i com es veu ho ha fet!
 
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image66.png)
 
-Edita el fitxer master_backup.sql i busca la línia que comenci per
+**Edita el fitxer master_backup.sql i busca la línia que comenci per
 \--CHANGE MASTER TO\.... i busca els valors MASTER_LOG_FILE i
-MASTER_LOG_POS.
+MASTER_LOG_POS.**
 
-Anem a la maquina master i ens dirigim a la ruta on es va fer el dump. A continuacio farem el nano del archiu 
+Ara anem a la maàquina master i ens dirigim a la ruta on es va fer el dump. A continuació farem el nano de l'arxiu 
 
 ![Interfaz de usuario gráfica Descripción generada 
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image11.png)
@@ -111,33 +114,41 @@ automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/
 
 #### **SLAVE**
 
-Para el servei de MySQL.
+**Para el servei de MySQL.**
+
+Per tal de parar el servei de mysql de la màquina slave tan sols hem de fer el **STOP** en el systemctl
 
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image13.png)
 
-Modifica el fitxer de configuració /etc/my.conf
+**Modifica el fitxer de configuració /etc/my.conf**
 
-Posem el id del server del slave i desmarco la linia per aixi tenir el binlog desactivat
+Una vegada fet el previ, ens redirigim a ***/etc/my.cnf***, posem el id del server del slave i desmarquem la linia per aixi tenir el binlog desactivat
 
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image14.png)
 
-Torna engegar el servei MySQL.
+**Torna engegar el servei MySQL.**
+
+Per tal de engegar el servei de mysql de la màquina slave tan sols hem de fer el **RESTART** en el systemctl
 
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image15.png)
 
 #### **MASTER**
 
-Afegeix l\'usuari slave amb la IP de la màquina slave
+**Afegeix l\'usuari slave amb la IP de la màquina slave**
+
+Per tal de crear l'usuari SLAVE fem el següent:
 
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image16.png)
 
-Afegix el permís de REPLICATION SLAVE a l\'usuari que acabes de crear.
+**Afegix el permís de REPLICATION SLAVE a l\'usuari que acabes de crear.**
+
+Li donem els permisos de replicació al SLAVE amb la comanda qu mostrem:
 
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image17.png)
 
-Ara fem un alter al usuari slave creat i li posem que la contaseña sigui nativa ja que el mysql 8.0 ya te per defecte la securitzacio activada
+Ara fem un alter al usuari slave creat i li posem que la contaseña sigui nativa ja que el mysql 8.0 ja te per defecte la securització activada
 
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image18.png)
@@ -146,8 +157,10 @@ Fem un FLUSH PRIVILEGES
 
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image19.png)
 
-A la màquina SLAVE executa la següent comanda ajudant-te de les dades
-del pas 3 i 4:
+**A la màquina SLAVE executa la següent comanda ajudant-te de les dades
+del pas 3 i 4:**
+
+Fem un change master to, i posem totes les dades de la màquina slave
 
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image20.png)
@@ -157,7 +170,7 @@ Iniciem el slave
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image21.png)
 
-Ara veurem el status del slave am la seguent sentenci mysql.Com esta operatiu i funciona correctament
+Ara veurem el status del slave amb la següent sentència mysql. Tal i com es veu està operatiu i funciona correctament
 
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image67.png)
