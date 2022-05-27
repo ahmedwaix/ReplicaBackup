@@ -160,14 +160,14 @@ automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/
 Ara veurem el status del slave am la seguent sentenci mysql.Com esta operatiu i fuincina correctament
 
 ![Texto Descripción generada
-automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image67ng)
+automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image67.png)
 
 Aixi es veu en el slave la base de dades creada
 
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image22.png)
 
-Ara li introduuim nos valors en el salave per que repliqui en el slave
+Ara li introduim nos valors en el salave per que repliqui en el slave
 
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image23.png)
