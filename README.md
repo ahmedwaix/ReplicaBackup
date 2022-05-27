@@ -30,26 +30,26 @@ Verifica que el paràmetre server-id té un valor numèric (per defecte és
 1). ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image1.png)
 
-• Fes un FLUSH DELS LOGS utilitzant la comanda FLUSH LOGS dins del MySQL
+Fes un FLUSH DELS LOGS utilitzant la comanda FLUSH LOGS dins del MySQL
 
 ![Interfaz de usuario gráfica, Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image2.png)
 
-• Realitza una comprovació dels logs com a master mitjançant SHOW MASTER
+Realitza una comprovació dels logs com a master mitjançant SHOW MASTER
 LOGS
 
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image3.png)
 
-CONFIGURACIÓ SLAVE i MASTER
+# **CONFIGURACIÓ SLAVE i MASTER**
 
 Realitza una còpia de la màquina virtual a on tinguis SGBD MySQL.
-Aquesta nova màquina serà que farà d\'eslau
+Aquesta nova màquina serà que farà d'eslau
 
 ![Interfaz de usuario gráfica, Texto, Aplicación Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image4.png)
 
-• Esbrina quina IP tenen cadascuna de les màquines (master, slave).
+Esbrina quina IP tenen cadascuna de les màquines (master, slave).
 
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image5.png)
@@ -111,7 +111,7 @@ automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/
 
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image19.png)
 
-• A la màquina SLAVE executa la següent comanda ajudant-te de les dades
+A la màquina SLAVE executa la següent comanda ajudant-te de les dades
 del pas 3 i 4:
 
 ![Texto Descripción generada
