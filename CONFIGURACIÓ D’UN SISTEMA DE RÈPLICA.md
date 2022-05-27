@@ -99,8 +99,12 @@ Edita el fitxer master_backup.sql i busca la línia que comenci per
 \--CHANGE MASTER TO\.... i busca els valors MASTER_LOG_FILE i
 MASTER_LOG_POS.
 
-![Interfaz de usuario gráfica Descripción generada
+Anem a la maquina master i ens dirigim a la ruta on es va fer el dump. A continuacio farem el nano del archiu 
+
+![Interfaz de usuario gráfica Descripción generada 
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image11.png)
+
+Una vegada estem a dins del fitxer anem a la linia on ens indiaca la poscicio i el nom del log file.
 
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image12.png)
@@ -112,6 +116,8 @@ Para el servei de MySQL.
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image13.png)
 
 Modifica el fitxer de configuració /etc/my.conf
+
+Posem el id del server del slave i desmarco la linia per aixi tenir el binlog desactivat
 
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image14.png)
@@ -131,8 +137,12 @@ Afegix el permís de REPLICATION SLAVE a l\'usuari que acabes de crear.
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image17.png)
 
+Ara fem un alter al usuari slave creat i li posem que la contaseña sigui nativa ja que el mysql 8.0 ya te per defecte la securitzacio activada
+
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image18.png)
+
+Fem un FLUSH PRIVILEGES
 
 ![](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image19.png)
 
@@ -142,8 +152,15 @@ del pas 3 i 4:
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image20.png)
 
+Iniciem el slave
+
 ![Texto Descripción generada
 automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image21.png)
+
+Ara veurem el status del slave.COm es veu esta operatiu i fuincina correctament
+
+![Texto Descripción generada
+automáticamente](https://github.com/ahmedwaix/ReplicaBackup/blob/main/imagenes/image22.png)
 
 Aixi es veu en el slave la base de dades creada
 
